@@ -55,6 +55,28 @@
             font-family: 'Playfair Display', serif;
         }
 
+        /* Marquee Animation */
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .marquee-wrapper {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+        }
+        .marquee-track {
+            display: flex;
+            animation: marquee 35s linear infinite;
+            width: max-content;
+        }
+        .marquee-content {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            padding-right: 4rem;
+        }
+
         .check-icon {
             min-width: 22px;
             width: 22px;
@@ -138,14 +160,41 @@
 </head>
 <body class="antialiased">
 
-    <!-- Navigation (Limpa) -->
-    <nav class="bg-white py-5 shadow-sm sticky top-0 z-50">
+    <!-- Promo Bar (Topo Preto) -->
+    <div class="bg-black text-white text-center py-2.5 text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase">
+        SPECIAL LIMITED TIME OFFER | UP TO 75% OFF
+    </div>
+
+    <!-- Marquee Trust Bar (Faixa de Rolagem) -->
+    <div class="bg-white border-b border-gray-100 py-3 overflow-hidden">
+        <div class="marquee-wrapper text-[10px] sm:text-xs font-bold text-slate-700 uppercase tracking-widest whitespace-nowrap">
+            <div class="marquee-track">
+                <div class="marquee-content">
+                    <div class="flex items-center gap-3"><i class="fas fa-truck text-slate-800"></i> <span>FAST SHIPPING</span></div>
+                    <div class="flex items-center gap-3"><i class="fas fa-wallet text-slate-800"></i> <span>30-DAY MONEY BACK</span></div>
+                    <div class="flex items-center gap-3"><i class="fas fa-truck text-slate-800"></i> <span>FAST SHIPPING</span></div>
+                    <div class="flex items-center gap-3"><i class="fas fa-wallet text-slate-800"></i> <span>30-DAY MONEY BACK</span></div>
+                </div>
+                <!-- Duplicate for loop -->
+                <div class="marquee-content">
+                    <div class="flex items-center gap-3"><i class="fas fa-truck text-slate-800"></i> <span>FAST SHIPPING</span></div>
+                    <div class="flex items-center gap-3"><i class="fas fa-wallet text-slate-800"></i> <span>30-DAY MONEY BACK</span></div>
+                    <div class="flex items-center gap-3"><i class="fas fa-truck text-slate-800"></i> <span>FAST SHIPPING</span></div>
+                    <div class="flex items-center gap-3"><i class="fas fa-wallet text-slate-800"></i> <span>30-DAY MONEY BACK</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white/95 backdrop-blur-sm py-4 shadow-sm sticky top-0 z-50 border-b border-slate-50">
         <div class="container mx-auto px-6 flex justify-between items-center max-w-4xl">
-            <div class="flex items-center">
-                <img src="https://ozokumatcha.shop/images/ozoku-logo.svg" alt="Ōzoku Logo" class="h-8 w-auto" onerror="this.src='https://placehold.co/120x40/1a3c28/ffffff?text=OZOKU';">
+            <div class="flex items-center gap-2">
+                <img src="https://ozokumatcha.shop/images/ozoku-logo.svg" alt="Ōzoku Logo" class="h-7 w-auto" onerror="this.src='https://placehold.co/100x30/1a3c28/ffffff?text=OZOKU';">
+                <span class="text-[9px] bg-green-50 text-green-700 px-1.5 py-0.5 rounded font-bold uppercase tracking-tighter border border-green-100">Authorized Distributor</span>
             </div>
             <div class="flex items-center gap-6">
-                <a href="#country-selection" class="text-xs font-bold text-slate-800 uppercase tracking-widest hover:text-green-800 transition-colors">Select Country</a>
+                <a href="#country-selection" class="text-[10px] font-bold text-slate-800 uppercase tracking-widest border-b-2 border-green-800 pb-0.5">Select Country</a>
             </div>
         </div>
     </nav>
@@ -177,11 +226,11 @@
                 <span class="text-xs font-bold text-slate-500 uppercase tracking-widest">⭐ 4.7 | 1,000+ Verified Reviews</span>
             </div>
 
-            <!-- Optimized Copy -->
+            <!-- Copy Header -->
             <h1 class="text-4xl sm:text-6xl font-bold text-slate-900 mb-4 leading-tight">
                 Find Your Balance with Ōzoku
             </h1>
-            <h2 class="text-xl sm:text-2xl font-bold text-green-800 mb-8 italic">
+            <h2 class="text-xl sm:text-2xl font-bold text-green-800 mb-8 italic leading-snug">
                 Clean, Calm Energy — Without the Coffee Crash
             </h2>
             
@@ -239,7 +288,7 @@
             </a>
 
             <!-- Country Selection -->
-            <section id="country-selection" class="scroll-mt-24 mb-16">
+            <section id="country-selection" class="scroll-mt-24 mb-20">
                 <div class="text-center mb-10">
                     <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Select Your Region</h2>
                     <p class="text-slate-500 text-sm max-w-lg mx-auto leading-relaxed">
@@ -283,37 +332,43 @@
                 </div>
             </section>
 
-            <!-- FAQ Section (Value Content) - MOVIMENTADO PARA O FINAL -->
-            <section class="bg-slate-50 rounded-[2rem] p-8 mb-16 border border-slate-200">
-                <h3 class="text-2xl font-bold mb-6 text-slate-800">Expert Comparison: Why Matcha?</h3>
-                <div class="grid sm:grid-cols-2 gap-8 mb-8">
+            <!-- FAQ Section (Value Content) -->
+            <section class="bg-slate-50 rounded-[2.5rem] p-8 sm:p-12 mb-16 border border-slate-200">
+                <h3 class="text-2xl sm:text-3xl font-bold mb-8 text-slate-800">Expert Comparison: Why Matcha?</h3>
+                <div class="grid sm:grid-cols-2 gap-10 mb-10">
                     <div class="space-y-4">
-                        <h4 class="font-bold text-green-800 uppercase text-xs tracking-widest">The Pros</h4>
-                        <ul class="text-sm space-y-2 text-slate-600">
-                            <li><i class="fas fa-plus text-green-600 mr-2"></i> Sustained 4-6 hours of focus</li>
-                            <li><i class="fas fa-plus text-green-600 mr-2"></i> No "jittery" coffee feelings</li>
-                            <li><i class="fas fa-plus text-green-600 mr-2"></i> High chlorophyll content</li>
+                        <h4 class="font-bold text-green-800 uppercase text-xs tracking-[0.2em]">The Pros</h4>
+                        <ul class="text-sm space-y-3 text-slate-600">
+                            <li><i class="fas fa-check-circle text-green-600 mr-2"></i> Sustained 4-6 hours of focus</li>
+                            <li><i class="fas fa-check-circle text-green-600 mr-2"></i> No "jittery" coffee feelings</li>
+                            <li><i class="fas fa-check-circle text-green-600 mr-2"></i> Rich in L-Theanine</li>
                         </ul>
                     </div>
                     <div class="space-y-4">
-                        <h4 class="font-bold text-slate-400 uppercase text-xs tracking-widest">Things to Note</h4>
-                        <ul class="text-sm space-y-2 text-slate-500">
-                            <li><i class="fas fa-minus mr-2"></i> Best prepared with a whisk</li>
-                            <li><i class="fas fa-minus mr-2"></i> Authentic grade is premium priced</li>
+                        <h4 class="font-bold text-slate-400 uppercase text-xs tracking-[0.2em]">Things to Note</h4>
+                        <ul class="text-sm space-y-3 text-slate-500">
+                            <li><i class="fas fa-info-circle mr-2"></i> Best prepared with a bamboo whisk</li>
+                            <li><i class="fas fa-info-circle mr-2"></i> Authentic grade is premium priced</li>
                         </ul>
                     </div>
                 </div>
                 
-                <div class="border-t border-slate-200 pt-8">
-                    <h4 class="font-bold text-slate-800 mb-4">Frequently Asked Questions</h4>
+                <div class="border-t border-slate-200 pt-10">
+                    <h4 class="font-bold text-slate-800 mb-6 text-xl">Frequently Asked Questions</h4>
                     <div class="space-y-4 text-sm text-slate-600">
-                        <details class="bg-white p-4 rounded-xl cursor-pointer shadow-sm border border-slate-100">
-                            <summary class="font-bold">Is this the official Ōzoku store?</summary>
-                            <p class="mt-2 text-slate-500">We are an independent informational portal and authorized distributor partner. Our links securely direct you to the manufacturer's official store for final purchase and fulfillment.</p>
+                        <details class="bg-white p-5 rounded-2xl cursor-pointer shadow-sm border border-slate-100 group">
+                            <summary class="font-bold list-none flex justify-between items-center">
+                                Is this the official Ōzoku store?
+                                <i class="fas fa-plus text-[10px] group-open:rotate-45 transition-transform"></i>
+                            </summary>
+                            <p class="mt-4 text-slate-500 leading-relaxed">We are an independent informational portal and <strong>Authorized Distributor Partner</strong>. Our links securely direct you to the manufacturer's official store for final purchase, fulfillment, and full customer support.</p>
                         </details>
-                        <details class="bg-white p-4 rounded-xl cursor-pointer shadow-sm border border-slate-100">
-                            <summary class="font-bold">How long does shipping take?</summary>
-                            <p class="mt-2 text-slate-500">Orders process in 24h. Shipping to US, UK, CA, and AU usually takes between 5-12 business days depending on local postal services.</p>
+                        <details class="bg-white p-5 rounded-2xl cursor-pointer shadow-sm border border-slate-100 group">
+                            <summary class="font-bold list-none flex justify-between items-center">
+                                How long does shipping take?
+                                <i class="fas fa-plus text-[10px] group-open:rotate-45 transition-transform"></i>
+                            </summary>
+                            <p class="mt-4 text-slate-500 leading-relaxed">Orders are generally processed within 24-48 hours. Shipping to major regions like US, UK, CA, and AU typically takes between 5-12 business days depending on localized logistics.</p>
                         </details>
                     </div>
                 </div>
@@ -321,7 +376,7 @@
         </div>
     </main>
 
-    <!-- Footer (Transparência Total & Distribuidor Autorizado) -->
+    <!-- Footer -->
     <footer class="bg-white border-t border-slate-200 py-16">
         <div class="container mx-auto px-6 max-w-4xl">
             
@@ -341,7 +396,7 @@
                 <div class="space-y-4">
                     <h5 class="text-xs font-black uppercase tracking-[0.2em] text-slate-400">Independent Partner Status</h5>
                     <p class="text-[11px] leading-relaxed text-slate-500">
-                        This website serves as an independent informational resource and authorized distributor portal. We are committed to transparency and may receive compensation for purchases directed through this site to the official manufacturer store.
+                        This website serves as an independent informational resource and <strong>Authorized Distributor Portal</strong>. We are committed to absolute transparency and may receive compensation for purchases directed through this site to the official manufacturer store.
                     </p>
                 </div>
             </div>
@@ -350,7 +405,7 @@
             <div class="space-y-6 text-[10px] text-slate-400 text-center leading-relaxed">
                 <p class="font-bold text-slate-500 uppercase tracking-widest">Medical Disclaimer</p>
                 <p>
-                    The information on this website has not been evaluated by the FDA or any medical authority. This product is not intended to diagnose, treat, cure, or prevent any disease. Consult a healthcare professional before starting any dietary supplement, particularly if you are pregnant or have medical conditions.
+                    The information on this website has not been evaluated by the FDA or any other medical authority. This product is not intended to diagnose, treat, cure, or prevent any disease. Consult a healthcare professional before starting any dietary supplement, particularly if you are pregnant, nursing, or have medical conditions.
                 </p>
                 <p>
                     This site is not part of the Google website or Google Inc. Additionally, this site is NOT endorsed by Google in any way. GOOGLE is a trademark of GOOGLE, Inc.
@@ -378,7 +433,7 @@
                     <button class="close-modal-btn w-10 h-10 rounded-full hover:bg-slate-200" data-target="termsModal"><i class="fas fa-times"></i></button>
                 </div>
                 <div class="p-8 overflow-y-auto text-slate-600 text-sm leading-relaxed">
-                    <p>By using this portal, you acknowledge that we are an authorized distributor partner. All product transactions, payments, and shipping are managed by the official Ōzoku store.</p>
+                    <p>By using this portal, you acknowledge that we are an authorized distributor partner. All product transactions, payments, and shipping are managed and fulfilled by the official Ōzoku store.</p>
                 </div>
             </div>
         </div>
