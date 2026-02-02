@@ -60,7 +60,7 @@
             font-family: 'Inter', sans-serif;
             background-color: var(--ozoku-cream);
             color: #1e293b;
-            font-size: 16px; /* Base font size */
+            font-size: 16px; 
         }
         h1, h2, h3 {
             font-family: 'Playfair Display', serif;
@@ -106,7 +106,7 @@
         .country-card {
             border: 1px solid #e2e8f0;
             border-radius: 16px;
-            padding: 14px 18px; 
+            padding: 18px 20px; 
             display: flex;
             align-items: center;
             background: white;
@@ -116,15 +116,15 @@
         .country-card:hover {
             border-color: var(--ozoku-green);
             transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.08);
         }
 
         .avatar-stack {
             display: flex;
         }
         .avatar-stack img {
-            width: 34px;
-            height: 34px;
+            width: 36px;
+            height: 36px;
             border-radius: 50%;
             border: 2px solid white;
             margin-left: -12px;
@@ -172,34 +172,34 @@
 <body class="antialiased">
 
     <!-- Promo Bar Superior -->
-    <div class="bg-black text-white text-center py-2.5 text-[11px] font-bold tracking-widest uppercase">
+    <div class="bg-black text-white text-center py-3 text-[11px] font-bold tracking-[0.2em] uppercase">
         SPECIAL LIMITED TIME OFFER | UP TO 75% OFF
     </div>
 
     <!-- Barra Marquee -->
-    <div class="bg-white border-b border-gray-100 py-3 overflow-hidden">
+    <div class="bg-white border-b border-gray-100 py-3.5 overflow-hidden">
         <div class="marquee-wrapper text-[11px] font-bold text-slate-700 uppercase tracking-widest whitespace-nowrap">
             <div class="marquee-track">
                 <div class="marquee-content">
-                    <div class="flex items-center gap-3"><i class="fas fa-truck"></i> <span>FAST SHIPPING</span></div>
-                    <div class="flex items-center gap-3"><i class="fas fa-wallet"></i> <span>30-DAY MONEY BACK</span></div>
-                    <div class="flex items-center gap-3"><i class="fas fa-certificate"></i> <span>AUTH DISTRIBUTOR</span></div>
+                    <div class="flex items-center gap-3"><i class="fas fa-truck text-slate-400"></i> <span>FAST SHIPPING</span></div>
+                    <div class="flex items-center gap-3"><i class="fas fa-wallet text-slate-400"></i> <span>30-DAY MONEY BACK</span></div>
+                    <div class="flex items-center gap-3"><i class="fas fa-certificate text-slate-400"></i> <span>AUTH DISTRIBUTOR</span></div>
                 </div>
                 <div class="marquee-content">
-                    <div class="flex items-center gap-3"><i class="fas fa-truck"></i> <span>FAST SHIPPING</span></div>
-                    <div class="flex items-center gap-3"><i class="fas fa-wallet"></i> <span>30-DAY MONEY BACK</span></div>
-                    <div class="flex items-center gap-3"><i class="fas fa-certificate"></i> <span>AUTH DISTRIBUTOR</span></div>
+                    <div class="flex items-center gap-3"><i class="fas fa-truck text-slate-400"></i> <span>FAST SHIPPING</span></div>
+                    <div class="flex items-center gap-3"><i class="fas fa-wallet text-slate-400"></i> <span>30-DAY MONEY BACK</span></div>
+                    <div class="flex items-center gap-3"><i class="fas fa-certificate text-slate-400"></i> <span>AUTH DISTRIBUTOR</span></div>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Navegação -->
-    <nav class="bg-white/95 backdrop-blur-sm py-4 shadow-sm sticky top-0 z-50 border-b border-slate-50">
+    <nav class="bg-white/95 backdrop-blur-sm py-5 shadow-sm sticky top-0 z-50 border-b border-slate-50">
         <div class="container mx-auto px-6 flex justify-between items-center max-w-4xl">
             <div class="flex items-center gap-2">
-                <img src="images/ozoku-logo.svg" alt="Ōzoku Logo" class="h-7 w-auto" onerror="this.src='https://ozokumatcha.shop/images/ozoku-logo.svg';">
-                <span class="text-[10px] bg-green-50 text-green-700 px-2 py-0.5 rounded font-bold uppercase tracking-tight border border-green-100">Authorized Distributor</span>
+                <img src="images/ozoku-logo.svg" alt="Ōzoku Logo" class="h-8 w-auto" onerror="this.src='https://ozokumatcha.shop/images/ozoku-logo.svg';">
+                <span class="text-[10px] bg-green-50 text-green-700 px-2 py-0.5 rounded font-bold uppercase tracking-tight border border-green-100 hidden sm:inline-block">Authorized Distributor</span>
             </div>
             <div class="flex items-center">
                 <a href="#country-selection" class="text-[11px] font-bold text-slate-800 uppercase tracking-widest border-b-2 border-green-800 pb-0.5 hover:text-green-800 transition-colors">Select Country</a>
@@ -210,70 +210,69 @@
     <!-- Conteúdo Principal -->
     <main class="max-w-4xl mx-auto">
 
-        <!-- Hero Section - Imagem Original -->
+        <!-- Hero Section - Imagem Inteira -->
         <section class="relative w-full overflow-hidden">
             <div class="w-full">
                 <img src="images/ozoku.jpg" alt="Ōzoku Ceremonial Matcha" class="w-full h-auto block" onerror="this.src='https://ozokumatcha.shop/images/ozoku.jpg';">
-                <div class="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-xl shadow-lg border border-slate-100">
+                <div class="absolute bottom-4 left-4 sm:bottom-8 sm:left-8 bg-white/95 backdrop-blur-sm px-5 py-2.5 rounded-xl shadow-lg border border-slate-100">
                     <div class="flex items-center gap-2">
                         <div class="dot-pulse"></div>
-                        <span class="text-[10px] font-bold uppercase text-slate-600">High Demand Right Now</span>
+                        <span class="text-[11px] font-bold uppercase tracking-tight text-slate-600">Verified Stock in US & Australia</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Product Content -->
-        <div class="px-6 sm:px-12 py-12">
+        <div class="px-6 sm:px-12 py-12 sm:py-16">
             
-            <!-- Avaliação (Informativa) -->
+            <!-- Avaliação -->
             <div class="flex items-center gap-2 mb-6">
                 <div class="flex text-yellow-500 text-sm">
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                 </div>
-                <span class="text-[11px] font-bold text-slate-500 uppercase tracking-widest">⭐ 4.7 | 1,000+ Verified Reviews</span>
+                <span class="text-[12px] font-bold text-slate-500 uppercase tracking-[0.15em]">⭐ 4.7 | 1,000+ Verified Reviews</span>
             </div>
 
             <!-- Títulos Padronizados -->
-            <h1 class="text-3xl sm:text-5xl font-bold text-slate-900 mb-4 leading-tight">
+            <h1 class="text-4xl sm:text-6xl font-bold text-slate-900 mb-6 leading-tight tracking-tight">
                 Find Your Balance with Ōzoku
             </h1>
-            <h2 class="text-xl sm:text-2xl font-bold text-green-800 mb-8 italic leading-snug">
+            <h2 class="text-2xl sm:text-3xl font-bold text-green-800 mb-8 italic leading-snug">
                 Clean, Calm Energy — Without the Coffee Crash
             </h2>
             
             <!-- Texto Normal -->
-            <div class="text-slate-700 text-base sm:text-lg space-y-6 mb-10 leading-relaxed max-w-2xl">
+            <div class="text-slate-700 text-lg sm:text-xl space-y-6 mb-12 leading-relaxed max-w-2xl">
                 <p class="font-bold text-slate-900">You don’t need more caffeine. You need better energy.</p>
                 <p>
-                    Ōzoku is ceremonial-grade matcha crafted for those seeking a smooth, steady focus throughout the day. It is designed to support mental clarity and sustained energy without the common jitters or sudden crashes associated with traditional coffee.
+                    Ōzoku is ceremonial-grade matcha crafted for those seeking a smooth, steady focus throughout the day. It is designed to support mental clarity and sustained energy without the common jitters or sudden crashes.
                 </p>
-                <!-- Texto Informativo pequeno -->
-                <p class="text-[12px] text-slate-400 italic">Individual results may vary depending on lifestyle and usage.</p>
+                <p class="text-[13px] text-slate-400 italic">Individual results may vary based on health conditions and usage.</p>
             </div>
 
-            <!-- Benefícios (Texto Normal) -->
-            <div class="grid sm:grid-cols-2 gap-4 mb-12">
-                <div class="flex items-start bg-white p-5 rounded-2xl border border-slate-100 shadow-sm">
+            <!-- Benefícios -->
+            <div class="grid sm:grid-cols-2 gap-5 mb-14">
+                <div class="flex items-start bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
                     <div class="check-icon mt-1"><i class="fas fa-check"></i></div>
-                    <p class="text-slate-700 text-sm sm:text-base"><strong>Authentic Potency:</strong> Shade-grown for deeper flavour and nutrient density.</p>
+                    <p class="text-slate-700 text-base sm:text-lg"><strong>Authentic Potency:</strong> Shade-grown for deeper flavour.</p>
                 </div>
-                <div class="flex items-start bg-white p-5 rounded-2xl border border-slate-100 shadow-sm">
+                <div class="flex items-start bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
                     <div class="check-icon mt-1"><i class="fas fa-check"></i></div>
-                    <p class="text-slate-700 text-sm sm:text-base"><strong>Antioxidant Rich:</strong> Supports daily balance and wellness routine.</p>
+                    <p class="text-slate-700 text-base sm:text-lg"><strong>Antioxidant Rich:</strong> Supports daily wellness routine.</p>
                 </div>
-                <div class="flex items-start bg-white p-5 rounded-2xl border border-slate-100 shadow-sm">
+                <div class="flex items-start bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
                     <div class="check-icon mt-1"><i class="fas fa-check"></i></div>
-                    <p class="text-slate-700 text-sm sm:text-base"><strong>L-Theanine Support:</strong> Promotes a calm, focused state of mind.</p>
+                    <p class="text-slate-700 text-base sm:text-lg"><strong>L-Theanine Support:</strong> Promotes a calm, focused mind.</p>
                 </div>
-                <div class="flex items-start bg-white p-5 rounded-2xl border border-slate-100 shadow-sm">
+                <div class="flex items-start bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
                     <div class="check-icon mt-1"><i class="fas fa-check"></i></div>
-                    <p class="text-slate-700 text-sm sm:text-base"><strong>Stone-Milled Taste:</strong> Smooth profile with no "grassy" bitterness.</p>
+                    <p class="text-slate-700 text-base sm:text-lg"><strong>Stone-Milled:</strong> No bitterness, just clean smooth taste.</p>
                 </div>
             </div>
 
-            <!-- Social Proof (Texto Normal) -->
-            <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 mb-12 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <!-- Social Proof -->
+            <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-100 mb-14 flex flex-col sm:flex-row items-center justify-between gap-6">
                 <div class="flex items-center gap-4">
                     <div class="avatar-stack">
                         <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Reviewer">
@@ -282,103 +281,107 @@
                         <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Reviewer">
                     </div>
                     <div>
-                        <p class="font-bold text-slate-900 text-sm sm:text-base">Join 8,000+ ritualists</p>
-                        <p class="text-[11px] text-slate-400 uppercase font-bold tracking-tight">who switched from coffee recently</p>
+                        <p class="font-bold text-slate-900 text-lg">Join 8,000+ ritualists</p>
+                        <p class="text-[12px] text-slate-400 uppercase font-bold tracking-wider">who recently made the switch</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="dot-pulse mr-2"></div>
-                    <p class="text-sm font-bold text-green-700 uppercase tracking-tighter">In stock & Ready</p>
+                    <p class="text-sm font-bold text-green-700 uppercase tracking-widest">In stock & Ready</p>
                 </div>
             </div>
 
-            <!-- CTA principal -->
-            <a href="#country-selection" class="group relative block w-full text-center bg-black text-white font-black text-lg sm:text-xl py-6 px-8 rounded-2xl transition-all shadow-xl hover:scale-[1.01] active:scale-[0.99] uppercase tracking-widest mb-20 overflow-hidden">
-                <span class="relative z-10">CHECK DISCOUNTS (UP TO 75% OFF)</span>
+            <!-- CTA principal Refinado -->
+            <a href="#country-selection" class="group relative block w-full text-center bg-black text-white font-black text-xl sm:text-2xl py-7 px-8 rounded-[1.5rem] transition-all duration-300 shadow-[0_20px_50px_rgba(0,0,0,0.2)] hover:shadow-[0_25px_60px_rgba(0,0,0,0.3)] hover:-translate-y-1 active:scale-95 uppercase tracking-[0.05em] mb-24 overflow-hidden border-2 border-transparent hover:border-slate-800">
+                <span class="relative z-10 flex items-center justify-center gap-3">
+                    CHECK DISCOUNTS UP TO 75% OFF
+                    <i class="fas fa-chevron-right text-xs opacity-50 group-hover:translate-x-1 transition-transform"></i>
+                </span>
+                <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
             </a>
 
-            <!-- Seleção de País (H2 Padronizado) -->
-            <section id="country-selection" class="scroll-mt-24 mb-20">
-                <div class="text-center mb-10">
-                    <h2 class="text-2xl sm:text-4xl font-bold text-slate-900 mb-4">Select Your Region</h2>
-                    <p class="text-slate-500 text-sm sm:text-base max-w-lg mx-auto leading-relaxed">
-                        To view real-time inventory and localized currency, please click on your delivery region below:
+            <!-- Seleção de País -->
+            <section id="country-selection" class="scroll-mt-24 mb-24">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Select Your Region</h2>
+                    <p class="text-slate-500 text-lg sm:text-xl max-w-lg mx-auto leading-relaxed">
+                        To view real-time inventory and localized currency, please select your delivery region below:
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <a href="https://www.fasttrack36.com/PHPWHDRK/2RQ8RCMW/?uid=49354" class="country-card">
-                        <div class="flag-wrapper text-2xl sm:text-3xl mr-4"><span class="fi fi-us"></span></div>
+                        <div class="flag-wrapper text-3xl sm:text-4xl mr-5"><span class="fi fi-us"></span></div>
                         <div class="flex-1">
-                            <div class="font-bold text-slate-900 text-sm sm:text-base">United States</div>
-                            <div class="text-[10px] font-bold text-red-600 uppercase tracking-tight">● Limited Stock Remaining</div>
+                            <div class="font-bold text-slate-900 text-lg sm:text-xl">United States</div>
+                            <div class="text-[11px] font-bold text-red-600 uppercase tracking-widest">● Limited Stock Remaining</div>
                         </div>
-                        <i class="fas fa-external-link-alt text-slate-300 text-xs"></i>
+                        <i class="fas fa-chevron-right text-slate-300 text-sm"></i>
                     </a>
                     <a href="https://www.fasttrack36.com/PHPWHDRK/2RQ8RCMW/?uid=49360" class="country-card">
-                        <div class="flag-wrapper text-2xl sm:text-3xl mr-4"><span class="fi fi-ca"></span></div>
+                        <div class="flag-wrapper text-3xl sm:text-4xl mr-5"><span class="fi fi-ca"></span></div>
                         <div class="flex-1">
-                            <div class="font-bold text-slate-900 text-sm sm:text-base">Canada</div>
-                            <div class="text-[10px] font-bold text-amber-600 uppercase tracking-tight">● High Demand Area</div>
+                            <div class="font-bold text-slate-900 text-lg sm:text-xl">Canada</div>
+                            <div class="text-[11px] font-bold text-amber-600 uppercase tracking-widest">● High Demand Area</div>
                         </div>
-                        <i class="fas fa-external-link-alt text-slate-300 text-xs"></i>
+                        <i class="fas fa-chevron-right text-slate-300 text-sm"></i>
                     </a>
                     <a href="https://www.fasttrack36.com/PHPWHDRK/2RQ8RCMW/?uid=49357" class="country-card">
-                        <div class="flag-wrapper text-2xl sm:text-3xl mr-4"><span class="fi fi-gb"></span></div>
+                        <div class="flag-wrapper text-3xl sm:text-4xl mr-5"><span class="fi fi-gb"></span></div>
                         <div class="flex-1">
-                            <div class="font-bold text-slate-900 text-sm sm:text-base">United Kingdom</div>
-                            <div class="text-[10px] font-bold text-red-600 uppercase tracking-tight">● Limited Stock Remaining</div>
+                            <div class="font-bold text-slate-900 text-lg sm:text-xl">United Kingdom</div>
+                            <div class="text-[11px] font-bold text-red-600 uppercase tracking-widest">● Limited Stock Remaining</div>
                         </div>
-                        <i class="fas fa-external-link-alt text-slate-300 text-xs"></i>
+                        <i class="fas fa-chevron-right text-slate-300 text-sm"></i>
                     </a>
                     <a href="https://www.fasttrack36.com/PHPWHDRK/2RQ8RCMW/?uid=49363" class="country-card">
-                        <div class="flag-wrapper text-2xl sm:text-3xl mr-4"><span class="fi fi-au"></span></div>
+                        <div class="flag-wrapper text-3xl sm:text-4xl mr-5"><span class="fi fi-au"></span></div>
                         <div class="flex-1">
-                            <div class="font-bold text-slate-900 text-sm sm:text-base">Australia</div>
-                            <div class="text-[10px] font-bold text-green-600 uppercase tracking-tight">● Local Shipping Available</div>
+                            <div class="font-bold text-slate-900 text-lg sm:text-xl">Australia</div>
+                            <div class="text-[11px] font-bold text-green-600 uppercase tracking-widest">● Local Shipping Available</div>
                         </div>
-                        <i class="fas fa-external-link-alt text-slate-300 text-xs"></i>
+                        <i class="fas fa-chevron-right text-slate-300 text-sm"></i>
                     </a>
                 </div>
             </section>
 
-            <!-- FAQ Section (Conteúdo Informativo Padronizado) -->
-            <section class="bg-slate-50 rounded-[2.5rem] p-8 sm:p-12 mb-16 border border-slate-200">
-                <h3 class="text-2xl sm:text-3xl font-bold mb-8 text-slate-800">Expert Comparison: Why Matcha?</h3>
-                <div class="grid sm:grid-cols-2 gap-10 mb-10">
+            <!-- FAQ Section -->
+            <section class="bg-slate-50 rounded-[2.5rem] p-10 sm:p-14 mb-16 border border-slate-200">
+                <h3 class="text-2xl sm:text-3xl font-bold mb-10 text-slate-800">Expert Comparison: Why Matcha?</h3>
+                <div class="grid sm:grid-cols-2 gap-10 mb-12">
                     <div class="space-y-4">
-                        <h4 class="font-bold text-green-800 uppercase text-xs tracking-widest">The Pros</h4>
-                        <ul class="text-sm sm:text-base space-y-3 text-slate-600">
+                        <h4 class="font-bold text-green-800 uppercase text-[12px] tracking-[0.2em]">The Pros</h4>
+                        <ul class="text-base sm:text-lg space-y-4 text-slate-600">
                             <li><i class="fas fa-check-circle text-green-600 mr-2"></i> Sustained 4-6 hours of focus</li>
                             <li><i class="fas fa-check-circle text-green-600 mr-2"></i> No "jittery" heart racing</li>
                             <li><i class="fas fa-check-circle text-green-600 mr-2"></i> High chlorophyll content</li>
                         </ul>
                     </div>
                     <div class="space-y-4">
-                        <h4 class="font-bold text-slate-400 uppercase text-xs tracking-widest">Things to Note</h4>
-                        <ul class="text-sm sm:text-base space-y-3 text-slate-500">
+                        <h4 class="font-bold text-slate-400 uppercase text-[12px] tracking-[0.2em]">Things to Note</h4>
+                        <ul class="text-base sm:text-lg space-y-4 text-slate-500">
                             <li><i class="fas fa-info-circle mr-2"></i> Best prepared with a bamboo whisk</li>
                             <li><i class="fas fa-info-circle mr-2"></i> Authentic grade is premium priced</li>
                         </ul>
                     </div>
                 </div>
                 
-                <div class="border-t border-slate-200 pt-10">
-                    <h4 class="font-bold text-slate-800 mb-6 text-xl">Frequently Asked Questions</h4>
-                    <div class="space-y-4 text-sm sm:text-base text-slate-600">
-                        <details class="bg-white p-5 rounded-2xl cursor-pointer shadow-sm border border-slate-100 group">
-                            <summary class="font-bold list-none flex justify-between items-center">
+                <div class="border-t border-slate-200 pt-12">
+                    <h4 class="font-bold text-slate-800 mb-8 text-2xl">Frequently Asked Questions</h4>
+                    <div class="space-y-5">
+                        <details class="bg-white p-6 rounded-2xl cursor-pointer shadow-sm border border-slate-100 group">
+                            <summary class="font-bold text-base sm:text-lg list-none flex justify-between items-center">
                                 Is this the official Ōzoku store?
-                                <i class="fas fa-plus text-[10px] group-open:rotate-45 transition-transform"></i>
+                                <i class="fas fa-plus text-[12px] group-open:rotate-45 transition-transform"></i>
                             </summary>
-                            <p class="mt-4 text-slate-500 leading-relaxed text-sm">We are an independent informational portal and <strong>Authorized Distributor Partner</strong>. Our links direct you to the official manufacturer's store for secure purchase and global fulfillment.</p>
+                            <p class="mt-4 text-slate-500 leading-relaxed text-base">We are an independent informational portal and <strong>Authorized Distributor Partner</strong>. Our links direct you to the manufacturer's official store for secure purchase and global fulfillment.</p>
                         </details>
-                        <details class="bg-white p-5 rounded-2xl cursor-pointer shadow-sm border border-slate-100 group">
-                            <summary class="font-bold list-none flex justify-between items-center">
+                        <details class="bg-white p-6 rounded-2xl cursor-pointer shadow-sm border border-slate-100 group">
+                            <summary class="font-bold text-base sm:text-lg list-none flex justify-between items-center">
                                 How long does shipping take?
-                                <i class="fas fa-plus text-[10px] group-open:rotate-45 transition-transform"></i>
+                                <i class="fas fa-plus text-[12px] group-open:rotate-45 transition-transform"></i>
                             </summary>
-                            <p class="mt-4 text-slate-500 leading-relaxed text-sm">Orders process in 24-48h. Shipping typically takes between 5-12 business days depending on your delivery region (US, UK, CA, or AU).</p>
+                            <p class="mt-4 text-slate-500 leading-relaxed text-base">Orders process in 24-48h. Shipping typically takes between 5-12 business days depending on your delivery region (US, UK, CA, or AU).</p>
                         </details>
                     </div>
                 </div>
@@ -386,34 +389,34 @@
         </div>
     </main>
 
-    <!-- Rodapé (Texto Informativo Pequeno) -->
-    <footer class="bg-white border-t border-slate-200 py-16">
+    <!-- Rodapé -->
+    <footer class="bg-white border-t border-slate-200 py-20">
         <div class="container mx-auto px-6 max-w-4xl">
             
-            <div class="grid sm:grid-cols-2 gap-12 mb-12 border-b border-slate-100 pb-12">
+            <div class="grid sm:grid-cols-2 gap-12 mb-14 border-b border-slate-100 pb-14">
                 <div class="space-y-4">
-                    <h5 class="text-[11px] font-black uppercase tracking-widest text-slate-400">Authorized Operator</h5>
-                    <p class="text-sm text-slate-600 leading-relaxed">
+                    <h5 class="text-[11px] font-black uppercase tracking-[0.2em] text-slate-400">Authorized Operator</h5>
+                    <p class="text-[14px] text-slate-600 leading-relaxed">
                         <strong>UAB Rara Digital</strong><br>
                         Gedimino pr. 20, LT-01103<br>
                         Vilnius, Lithuania<br>
                         Registration: 306641699
                     </p>
-                    <p class="text-sm text-slate-600">
+                    <p class="text-[14px] text-slate-600">
                         <strong>Support:</strong> <a href="mailto:support@get-ozokumatcha.com" class="underline hover:text-green-800">support@get-ozokumatcha.com</a>
                     </p>
                 </div>
                 <div class="space-y-4">
-                    <h5 class="text-[11px] font-black uppercase tracking-widest text-slate-400">Independent Partner</h5>
-                    <p class="text-[12px] leading-relaxed text-slate-500">
+                    <h5 class="text-[11px] font-black uppercase tracking-[0.2em] text-slate-400">Independent Partner</h5>
+                    <p class="text-[13px] leading-relaxed text-slate-500">
                         This portal serves as an independent authorized distributor resource. We are committed to transparency and may receive compensation for purchases directed through this site to official stores.
                     </p>
                 </div>
             </div>
 
-            <!-- Disclaimers Jurídicos (Pequeno) -->
-            <div class="space-y-6 text-[10px] text-slate-400 text-center leading-relaxed">
-                <p class="font-bold text-slate-500 uppercase tracking-widest">Medical Disclaimer</p>
+            <!-- Disclaimers Jurídicos -->
+            <div class="space-y-8 text-[11px] text-slate-400 text-center leading-relaxed max-w-3xl mx-auto">
+                <p class="font-bold text-slate-500 uppercase tracking-[0.2em]">Medical Disclaimer</p>
                 <p>
                     The information provided here has not been evaluated by the FDA or any medical authority. This product is not intended to diagnose, treat, cure, or prevent any disease. Consult a healthcare professional before starting any supplement, especially if pregnant or under medical care.
                 </p>
@@ -421,30 +424,29 @@
                     This site is not part of the Google website or Google Inc. Additionally, this site is NOT endorsed by Google in any way. GOOGLE is a trademark of GOOGLE, Inc.
                 </p>
                 
-                <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 pt-4 font-bold uppercase tracking-widest text-[9px]">
-                    <a href="#" id="termsLink" class="hover:text-black">Terms of Service</a>
-                    <a href="#" id="privacyLink" class="hover:text-black">Privacy Policy</a>
-                    <a href="#" id="refundLink" class="hover:text-black">Returns</a>
-                    <a href="#" id="shippingLink" class="hover:text-black">Shipping</a>
-                    <a href="#" id="contactLink" class="hover:text-black">Contact</a>
+                <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 pt-6 font-bold uppercase tracking-widest text-[10px]">
+                    <a href="#" id="termsLink" class="hover:text-black transition-colors">Terms of Service</a>
+                    <a href="#" id="privacyLink" class="hover:text-black transition-colors">Privacy Policy</a>
+                    <a href="#" id="refundLink" class="hover:text-black transition-colors">Returns</a>
+                    <a href="#" id="shippingLink" class="hover:text-black transition-colors">Shipping</a>
+                    <a href="#" id="contactLink" class="hover:text-black transition-colors">Contact</a>
                 </div>
                 
-                <p class="pt-8 opacity-60 uppercase tracking-tighter">&copy; 2026 Ōzoku Authorized Distributor Portal. All rights reserved.</p>
+                <p class="pt-10 opacity-60 uppercase tracking-tighter text-[9px]">&copy; 2026 Ōzoku Authorized Distributor Portal. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Modais (Texto de Política) -->
+    <!-- Modais -->
     <div id="modalContainer">
         <div id="termsModal" class="modal fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm">
             <div class="modal-content bg-white w-full max-w-2xl max-h-[85vh] rounded-[2rem] shadow-2xl flex flex-col overflow-hidden">
                 <div class="px-8 py-6 border-b border-slate-100 flex justify-between items-center bg-slate-50">
-                    <h3 class="text-lg font-bold">Terms of Service</h3>
-                    <button class="close-modal-btn w-10 h-10 rounded-full hover:bg-slate-200" data-target="termsModal"><i class="fas fa-times"></i></button>
+                    <h3 class="text-xl font-bold">Terms of Service</h3>
+                    <button class="close-modal-btn w-10 h-10 rounded-full hover:bg-slate-200 transition-colors" data-target="termsModal"><i class="fas fa-times"></i></button>
                 </div>
                 <div class="p-8 overflow-y-auto text-slate-600 text-sm leading-relaxed space-y-4">
-                    <p>By using this portal, you acknowledge that we are an authorized affiliate partner. All product transactions, payments, and shipping are managed by the official manufacturer site.</p>
-                    <p>Full terms and conditions available at checkout on the manufacturer domain.</p>
+                    <p>By using this portal, you acknowledge that we are an authorized affiliate partner. All transactions are managed by the manufacturer site.</p>
                 </div>
             </div>
         </div>
