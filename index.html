@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17879355180"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17879355180');
+    </script>
+
     <!-- Script Externo Raldoeira -->
     <script src="https://cdn.raldoeira.com/code/8300-83ecad50-25e0-45fb-b1c7-ded68a6f26cd"></script>
     
@@ -177,7 +186,7 @@
 </head>
 <body class="antialiased">
 
-    <!-- Faixa de Promoção Superior -->
+    <!-- Promo Bar Superior -->
     <div class="bg-black text-white text-center py-2.5 text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase">
         SPECIAL LIMITED TIME OFFER | UP TO 75% OFF
     </div>
@@ -219,7 +228,6 @@
         <!-- Hero Section - Imagem Inteira Sem Cortes -->
         <section class="relative w-full overflow-hidden">
             <div class="w-full">
-                <!-- h-auto block garante que a imagem não seja cortada e ocupe sua proporção original -->
                 <img src="images/ozoku.jpg" alt="Ōzoku Ceremonial Matcha" class="w-full h-auto block" onerror="this.src='https://ozokumatcha.shop/images/ozoku.jpg';">
                 <div class="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-xl shadow-lg border border-slate-100">
                     <div class="flex items-center gap-2">
@@ -241,7 +249,7 @@
                 <span class="text-xs font-bold text-slate-500 uppercase tracking-widest">⭐ 4.7 | 1,000+ Verified Reviews</span>
             </div>
 
-            <!-- Cabeçalho de Vendas -->
+            <!-- Cabeçalho -->
             <h1 class="text-4xl sm:text-6xl font-bold text-slate-900 mb-4 leading-tight">
                 Find Your Balance with Ōzoku
             </h1>
@@ -277,7 +285,7 @@
                 </div>
             </div>
 
-            <!-- Prova Social -->
+            <!-- Social Proof -->
             <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 mb-12 flex flex-col sm:flex-row items-center justify-between gap-6">
                 <div class="flex items-center gap-4">
                     <div class="avatar-stack">
@@ -297,12 +305,12 @@
                 </div>
             </div>
 
-            <!-- Botão Principal -->
+            <!-- CTA principal -->
             <a href="#country-selection" class="group relative block w-full text-center bg-black text-white font-black text-xl py-6 px-8 rounded-2xl transition-all shadow-xl hover:scale-[1.01] active:scale-[0.99] uppercase tracking-widest mb-16 overflow-hidden">
                 <span class="relative z-10">CHECK DISCOUNTS (UP TO 75% OFF)</span>
             </a>
 
-            <!-- Seleção de Região -->
+            <!-- Seleção de País -->
             <section id="country-selection" class="scroll-mt-24 mb-20">
                 <div class="text-center mb-10">
                     <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Select Your Region</h2>
@@ -416,7 +424,7 @@
                 </div>
             </div>
 
-            <!-- Avisos Legais -->
+            <!-- Legal Disclaimers -->
             <div class="space-y-6 text-[10px] text-slate-400 text-center leading-relaxed">
                 <p class="font-bold text-slate-500 uppercase tracking-widest">Medical Disclaimer</p>
                 <p>
@@ -441,7 +449,6 @@
 
     <!-- Modais -->
     <div id="modalContainer">
-        <!-- Modal Termos de Serviço -->
         <div id="termsModal" class="modal fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm">
             <div class="modal-content bg-white w-full max-w-2xl max-h-[85vh] rounded-[2rem] shadow-2xl flex flex-col overflow-hidden">
                 <div class="px-8 py-6 border-b border-slate-100 flex justify-between items-center bg-slate-50">
@@ -456,7 +463,6 @@
                 </div>
             </div>
         </div>
-        <!-- Outros modais seriam definidos aqui da mesma forma... -->
     </div>
 
     <script>
